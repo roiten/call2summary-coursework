@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GigaAM офлайн</string>
+    <string name="download_model">Загрузить модель (~305 МБ)</string>
+    <string name="pick_file">Выбрать аудиофайл</string>
+    <string name="recognize">Распознать</string>
+    <string name="copy">Копировать текст</string>
+    <string name="no_file">Файл не выбран</string>
+    <string name="result_hint">Здесь появится текст</string>
+</resources>

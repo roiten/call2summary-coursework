@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/download_model"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnPick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_file" />
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="@string/no_file" />
+
+    <Button
+        android:id="@+id/btnRecognize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recognize" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/result_hint"
+            android:textIsSelectable="true"
+            android:textSize="17sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/copy" />
+</LinearLayout>
